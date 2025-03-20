@@ -10,7 +10,7 @@ else{
     console.log("Employee is not Present");
 }
 
-//calculating dailywage of an employee without a function
+//calculating dailywage of an employee without a function.
 let workingHours = Math.floor(Math.random()*10)%3;
 
 const isPartTime = 1;
