@@ -37,3 +37,19 @@ function getWorkingHours(workingHours){
 let wage = wagePerHour*getWorkingHours(workingHours);
 
 console.log("Daily wage generated for employee is ",wage);
+
+//calcultating wages for a Month
+
+const numberOfWorkingDays = 20;
+
+let empHrs = 0;
+
+for(let i = 1; i<=numberOfWorkingDays;i++){
+    let empCheck = Math.floor(Math.random()*10)%3;    //getting fulltime, partime or notime status
+    empHrs += getWorkingHours(empCheck);
+}
+
+let emgWage = empHrs*wagePerHour;
+console.log("Monthly Wage of the Employee for hours "+empHrs+" is "+emgWage);
+
+
